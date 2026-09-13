@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Play - Snake</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <h1>🐍 Snake</h1>
+    <div>
+      <span class="muted" id="whoami"></span>
+      <button class="ghost" id="logoutBtn">Log out</button>
+    </div>
+  </div>
+
+  <div class="card wide">
+    <div class="score-row">
+      <span>Score: <strong id="score">0</strong></span>
+      <span class="muted">Use arrow keys or WASD</span>
+    </div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div class="actions">
+      <button class="primary" id="newGameBtn">New game</button>
+      <span class="error" id="gameOverMsg"></span>
+    </div>
+  </div>
+
+  <div class="card wide">
+    <h2>Leaderboard</h2>
+    <table>
+      <thead>
+        <tr><th>#</th><th>Player</th><th>Best score</th></tr>
+      </thead>
+      <tbody id="leaderboardBody"></tbody>
+    </table>
+  </div>
+
+  <script src="/js/leaderboard.js"></script>
+  <script src="/js/game.js"></script>
+</body>
+</html>

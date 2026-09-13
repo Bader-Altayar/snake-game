@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Snake</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <h1>🐍 Snake</h1>
+  <p class="muted">A small full-stack Snake game. Register or log in to play and save your score.</p>
+
+  <div class="card">
+    <div class="actions">
+      <a href="/login.html"><button class="primary">Log in</button></a>
+      <a href="/register.html"><button class="ghost">Register</button></a>
+      <a href="/game"><button class="ghost">Play</button></a>
+    </div>
+  </div>
+
+  <div class="card wide">
+    <h2>Leaderboard</h2>
+    <table>
+      <thead>
+        <tr><th>#</th><th>Player</th><th>Best score</th></tr>
+      </thead>
+      <tbody id="leaderboardBody"></tbody>
+    </table>
+  </div>
+
+  <script src="/js/leaderboard.js"></script>
+</body>
+</html>

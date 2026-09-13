@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Register - Snake</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <h1>🐍 Snake</h1>
+
+  <div class="card">
+    <h2>Create an account</h2>
+    <form id="registerForm">
+      <label for="username">Username</label>
+      <input id="username" name="username" autocomplete="username" required minlength="3" maxlength="20" pattern="[a-zA-Z0-9_]+" />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required />
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="new-password" required minlength="8" />
+
+      <div class="actions">
+        <button type="submit" class="primary">Register</button>
+      </div>
+      <p class="error" id="formError"></p>
+    </form>
+    <p class="muted">Already have an account? <a href="/login.html">Log in</a></p>
+  </div>
+
+  <script src="/js/register.js"></script>
+</body>
+</html>
